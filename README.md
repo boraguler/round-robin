@@ -1,6 +1,6 @@
 # RoundRobin for Laravel 5.8+
 [![Latest Stable Version](https://poser.pugx.org/boraguler/round-robin/v/stable)](https://packagist.org/packages/boraguler/round-robin) [![Total Downloads](https://poser.pugx.org/boraguler/round-robin/downloads)](https://packagist.org/packages/boraguler/round-robin)
-[![Latest Unstable Version](https://poser.pugx.org/boraguler/round-robin/v/unstable)](https://packagist.org/packages/boraguler/round-robin)
+[![Monthly Downloads](https://poser.pugx.org/boraguler/round-robin/d/monthly)](https://packagist.org/packages/boraguler/round-robin) [![Latest Unstable Version](https://poser.pugx.org/boraguler/round-robin/v/unstable)](https://packagist.org/packages/boraguler/round-robin)
 [![License](https://poser.pugx.org/boraguler/round-robin/license)](https://packagist.org/packages/boraguler/round-robin)
 
 BoraGuler\Round-Robin is an easy way to create schedule with round-robin(rr) technique.
