@@ -57,7 +57,7 @@ $teams = ['Galatasaray', 'Arsenal', 'Atlético de Madrid', 'Borussia', 'Barcelon
 $schedule = RoundRobin::from($teams)->shuffle(15)->make();
 ```
 
-If you want to pre-define round number(s) (default = 1):
+If you want to pre-define round number (default = 1):
 ```php
 $teams = ['Galatasaray', 'Arsenal', 'Atlético de Madrid', 'Borussia', 'Barcelona','Liverpool', 'Bayer 04', 'Real Madrid'];
 $schedule = RoundRobin::from($teams)->rounds(3)->make();
