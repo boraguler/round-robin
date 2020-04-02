@@ -3,10 +3,10 @@
 [![Latest Unstable Version](https://poser.pugx.org/boraguler/round-robin/v/unstable)](https://packagist.org/packages/boraguler/round-robin)
 [![License](https://poser.pugx.org/boraguler/round-robin/license)](https://packagist.org/packages/boraguler/round-robin)
 
-Round-Robin is an easy way to create schedule with round-robin(rr) technique.
+BoraGuler\Round-Robin is an easy way to create schedule with round-robin(rr) technique.
 
 ## Installation
-1) In order to install Laravel Round-Robin, just add the following to your composer.json. Then run `composer update`:
+1) In order to install BoraGuler\Round-Robin, just add the following to your composer.json. Then run `composer update`:
 ```json
 "boraguler/round-robin": "1.0.*"
 ```
@@ -40,32 +40,38 @@ $schedule = RoundRobin::from($teams)->make();
 
 With a facade:
 ```php
-$teams = ['Arsenal', 'Atlético de Madrid', 'Borussia', 'Barcelona','Liverpool', 'Bayer 04', 'Real Madrid'];
+$teams = ['Galatasaray','Arsenal', 'Atlético de Madrid', 'Borussia', 'Barcelona','Liverpool', 'Bayer 04', 'Real Madrid'];
 $schedule = RoundRobin::from($teams)->make();
 ```
 
 
 Generate a schedule without randomly shuffling the teams using the $shuffle boolean parameter:
 ```php
-$teams = ['Arsenal', 'Atlético de Madrid', 'Borussia', 'Barcelona','Liverpool', 'Bayer 04', 'Real Madrid'];
+$teams = ['Galatasaray','Arsenal', 'Atlético de Madrid', 'Borussia', 'Barcelona','Liverpool', 'Bayer 04', 'Real Madrid'];
 $schedule = RoundRobin::from($teams)->doNotShuffle()->make();
 ```
 
 Use your own seed with the $seed integer parameter for predetermined shuffling:
 ```php
-$teams = ['Arsenal', 'Atlético de Madrid', 'Borussia', 'Barcelona','Liverpool', 'Bayer 04', 'Real Madrid'];
+$teams = ['Galatasaray','Arsenal', 'Atlético de Madrid', 'Borussia', 'Barcelona','Liverpool', 'Bayer 04', 'Real Madrid'];
 $schedule = RoundRobin::from($teams)->shuffle(15)->make();
+```
+
+If you want to pre-define round number(s) (default = 1):
+```php
+$teams = ['Galatasaray','Arsenal', 'Atlético de Madrid', 'Borussia', 'Barcelona','Liverpool', 'Bayer 04', 'Real Madrid'];
+$schedule = RoundRobin::from($teams)->rounds(3)->make();
 ```
 
 If you want a double Round-robin:
 ```php
-$teams = ['Arsenal', 'Atlético de Madrid', 'Borussia', 'Barcelona','Liverpool', 'Bayer 04', 'Real Madrid'];
+$teams = ['Galatasaray','Arsenal', 'Atlético de Madrid', 'Borussia', 'Barcelona','Liverpool', 'Bayer 04', 'Real Madrid'];
 $schedule = RoundRobin::from($teams)->doubleRoundRobin()->make();
 ```
 
 If you want a get a *Schedule* Object:
 ```php
-$teams = ['Arsenal', 'Atlético de Madrid', 'Borussia', 'Barcelona','Liverpool', 'Bayer 04', 'Real Madrid'];
+$teams = ['Galatasaray','Arsenal', 'Atlético de Madrid', 'Borussia', 'Barcelona','Liverpool', 'Bayer 04', 'Real Madrid'];
 $schedule = RoundRobin::from($teams)->makeSchedule();
 ```
 
