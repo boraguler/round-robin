@@ -1,0 +1,25 @@
+{
+    "name": "boraguler/round-robin",
+    "description": "RoundRobin for Laravel 5.8+.",
+    "keywords": ["laravel", "roundrobin", "round-robin", "round robin", "round", "robin"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bora Güler",
+            "email": "boraguler@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "5.8.*",
+        "php": "^7.1.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5",
+        "orchestra/testbench": "3.8.x"
+    },
+    "autoload": {
+        "psr-4": {
+            "BoraGuler\\RoundRobin\\": "src/"
+        }
+    }
+}
