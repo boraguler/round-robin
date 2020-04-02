@@ -93,6 +93,20 @@ class RoundRobin
     }
 
     /**
+     * Pre-defined round number when generating schedule
+     *
+     * @param int $rounds
+     *
+     * @return RoundRobin
+     */
+    public function rounds(int $rounds = 1)
+    {
+        $this->_rounds = $rounds;
+
+        return $this;
+    }
+
+    /**
      * Do not shuffle array when generating schedule, resets seed.
      *
      * @return RoundRobin
