@@ -23,7 +23,7 @@ class RoundRobinServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('round-robin', function ($app) {
+        $this->app->singleton('RoundRobin', function ($app) {
             return new RoundRobin();
         });
     }
