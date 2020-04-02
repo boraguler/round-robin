@@ -6,7 +6,7 @@ Round-Robin is an easy way to create schedule with round-robin(rr) technique.
 ## Installation
 1) In order to install Laravel Round-Robin, just add the following to your composer.json. Then run `composer update`:
 ```json
-"boraguler/round-robin": "0.1.*"
+"boraguler/round-robin": "1.0.*"
 ```
 or run `composer require boraguler/round-robin`
 
